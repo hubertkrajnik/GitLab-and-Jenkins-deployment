@@ -9,6 +9,18 @@ Create a gitlab directory to store all data:
 mkdir -p /srv/gitlab
 ```
 
+```bash
+mkdir -p /srv/gitlab/config
+```
+
+```bash
+mkdir -p /srv/gitlab/logs
+```
+
+```bash
+mkdir -p /srv/gitlab/data
+```
+
 ## Create your own Jenkins Docker image from the Dockerfile
 
 ```bash
@@ -19,15 +31,15 @@ docker build -t myjenkins .
 
 To run Terraform infrastructure, use the below commands: 
 ```bash
-terraform init
+sudo terraform init
 ```
 
 ```bash
-terraform plan
+sudo terraform plan
 ```
 
 ```bash
-terraform apply
+sudo terraform apply
 ```
 
 ## After apply the plan
